@@ -3,33 +3,60 @@
     <head>
         <meta charset="utf-8"/>
         <title>Bootstrap template</title>
-        <!--------- Bootstrap link 3.3.7 ----------> 
-        <link rel="stylesheet" href="css/bootstrap.min.css">        
-
-        <!---------- Optional link ----------> 
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-
-        <!---------- jQuery link 3.2.1 ----------> 
+        <link rel="stylesheet" href="css/main.css">
         <script src="js/jquery-3.2.1.min.js"></script>
-
-        <!---------- JavaScript link 3.3.7 ---------->
         <script src="js/bootstrap.min.js"></script>
-
-        <!---------- Custom jQuery link -------------------->
-        <script src="js/main.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     </head>
     <body>
-        <!---------- Change code here ---------->
-        <h1>HELLO!</h1>
-        <div class="row">
-            <div class="col-lg-6">
-                <button class="btn btn-primary center-block" onclick="$(this).hide();">Click me!</button>
+    <div class="full-height">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#hero">Home</a>
             </div>
-            <div class="col-lg-6">
-                <button class="btn btn-primary center-block" onclick="$(this).hide();">Click me!</button>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#">Linkedin</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div id="hero" class="full-height">
+            <div id="hero-content">
+                <img id="profile" src="http://www.personalbrandingblog.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png" alt="Smiley face" height="250" width="250">
+                <h1>Your Name</h1>
+                <div id="hero-info">
+                    <p> Student | Entrepreneur | Programmer</p>
+                </div>
             </div>
         </div>
-        <!---------- End change code ---------->
 
+        <div id="about" class="full-height">
+            <div class="content">
+                <h2> About </h2>
+                <p>Bacon ipsum dolor amet buffalo bacon drumstick pancetta cupim chuck. Biltong venison t-bone, filet mignon ham hock porchetta leberkas sausage capicola drumstick short ribs cupim pork chop frankfurter. Rump venison chuck kielbasa landjaeger shank pork ribeye pancetta shoulder buffalo ham. Biltong pancetta shoulder, bresaola leberkas spare ribs shank short ribs boudin swine pig doner jerky. Jowl buffalo filet mignon short ribs pork loin sausage pork belly ball tip meatloaf tongue doner.</p>
+            </div>
+        </div>
+
+        <div id="contact">
+            <h3> Contact </h3>
+            <div class="col-md-4"><p>Email: example@email.com</p></div>
+            <div class="col-md-4"><p>Phone Number: 123-456-7890</p></div>
+            <div class="col-md-4"><p>Location: Santa Cruz, CA</p></div>
+        </div>
+
+    </div>
     </body>
 </html>
