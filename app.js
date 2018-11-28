@@ -10,6 +10,6 @@ router.get("/", (req,res) => {
   res.sendFile(path + "index.html");
 });
 
-app.listen(8000, () => {
-  console.log("Live at Port 8000");
+app.listen(80, () => {
+  console.log("Live at Port 80");
 });
